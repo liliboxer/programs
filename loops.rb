@@ -3,9 +3,10 @@ input = gets.chomp
 
 while input != input.upcase
   puts "HUH?! SPEAK UP LOUDER SONNY!"
-  inputs = gets.chomp
+  input = gets.chomp
   if input == input.upcase
-    break 
-    puts "NO, NOT SINCE 1938!"
+    year == year.rand(1930..1950)
+    puts "NO, NOT SINCE #{year}"
+    break
   end
 end
