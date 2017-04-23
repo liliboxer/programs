@@ -1,12 +1,7 @@
-number = 100
+x = 5
 
-def sing(number)
-  new_number = number - 1
-puts "#{number} bottles of beer on the wall, #{number} bottles of beer! "
-puts "Take one down, pass it around #{new_number} bottles of beer on the wall"
-end
-
-while number > 1
-  number -=1
-  sing(number)
+while x >= 1
+  puts "#{x.to_i} bottles of beer on the wall, #{x.to_i} bottles of beer! "
+  x -= 1
+  puts "Take one down, pass it around, #{x.to_i} bottles of beer on the wall! "
 end
