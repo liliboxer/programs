@@ -7,7 +7,6 @@ while time < 10
   dollars_hour = people * purchases
   dollars_total += dollars_hour
   time += 1
-
 end
 
 profit = dollars_total - 2000
@@ -17,6 +16,5 @@ if profit > 0
 elsif profit == 0
   puts "You made #{dollars_total} and broken even"
 else
-  profit < 0
   puts "You looooose! "
 end
