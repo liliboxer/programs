@@ -9,8 +9,8 @@ while biscuits < 100
       biscuits -= 20
       puts "Max dropped the tray! "
     else
-        biscuits += 20
-        puts "Max made 20 biscuits this hour! "
+      biscuits += 20
+      puts "Max made 20 biscuits this hour! "
     end
   else
     if rand(1..100) <= 25
