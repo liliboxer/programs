@@ -22,11 +22,8 @@ while biscuits < 100
     end
   end
   time -= 1
-  if time == 0
+  if time == 0 || biscuits <= 0
     puts "You're fired Max!"
-    break
-  elsif biscuits <= 0
-    puts "You're fired Max! "
     break
   elsif biscuits >= 100
     puts "You did it Max! Final biscuit count: #{biscuits}"
