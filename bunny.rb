@@ -19,11 +19,8 @@ while carrots < 10
   else
     puts "Please type one of the options above"
   end
-  if carrots > 1
-    carrots -= 2
-  elsif carrots == 1
-    carrots -= 1
-  else
+  carrots -= 2
+  if carrots < 0
     carrots = 0
   end
   puts "Current Carrot Count: #{carrots}"
