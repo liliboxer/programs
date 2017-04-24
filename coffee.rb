@@ -1,15 +1,13 @@
 time = 0
-dollars_total = 0 
+dollars_total = 0
 
 while time < 10
   purchases = rand(3..10)
   people = rand(20..50)
   dollars_hour = people * purchases
-  dollars_total = dollars_total + dollars_hour
+  dollars_total += dollars_hour
   time += 1
-  if time == 10
-    return dollars_total
-  end
+
 end
 
 profit = dollars_total - 2000
