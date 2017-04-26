@@ -1,19 +1,18 @@
-def ask question
-while true
-  puts question
-  input = gets.chomp
-  if input == "yes" || input == "no"
-    puts " "
-    if input == "yes"
-      answer = true
-    else
-      answer = false
+def ask(question)
+  while true
+    puts question
+    input = gets.chomp
+    if input == "yes" || input == "no"
+      puts " "
+      if input == "yes"
+      else
+        answer = false
+      end
+      break
+    elsif
+      puts "Please answer yes or no"
     end
-    break
-  elsif
-    puts "Please answer yes or no"
   end
-end
 end
 
 ask "Do you like tacos "
