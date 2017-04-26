@@ -4,10 +4,6 @@ def ask(question)
     input = gets.chomp
     if input == "yes" || input == "no"
       puts " "
-      if input == "yes"
-      else
-        answer = false
-      end
       break
     elsif
       puts "Please answer yes or no"
