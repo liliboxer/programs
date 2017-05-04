@@ -8,4 +8,6 @@ while true
   end
   words.push word
 end
-  puts words.sort
+
+puts "Here are your words sorted: "
+puts words.sort
