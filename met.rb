@@ -5,7 +5,7 @@ def ask(question)
     if input == "yes" || input == "no"
       puts " "
       break
-    elsif
+    else
       puts "Please answer yes or no"
     end
   end
