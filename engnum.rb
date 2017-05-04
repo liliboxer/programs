@@ -2,8 +2,8 @@ puts "Give me a number 0-100 and I will translate it to you back in english."
 
 def english(number)
 
-    tens_place = ["", "ten ", "twenty ", "thirty ", "forty ", "fifty ", "sixty ", "seventy ", "eighty ", "ninety "]
-    ones_place = ["", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
+    english_tens_places = ["", "ten ", "twenty ", "thirty ", "forty ", "fifty ", "sixty ", "seventy ", "eighty ", "ninety "]
+    english_ones_places = ["", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
 
     tens = number/10
     number = number - tens*10
