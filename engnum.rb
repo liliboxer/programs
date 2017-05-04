@@ -5,22 +5,22 @@ def english(number)
     tens_place = ["", "ten ", "twenty ", "thirty ", "forty ", "fifty ", "sixty ", "seventy ", "eighty ", "ninety "]
     ones_place = ["", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
 
-    left = number/10
-    number = number - left*10
+    tens_place = number/10
+    number = number - tens_place*10
 
-    right = number
+    ones_place = number
 
-    eng_num = tens_place[left] + ones_place[right]
+    eng_num = tens_place[tens_place] + ones_place[ones_place]
 
-      eng_num.sub! "ten one" , "eleven"
-      eng_num.sub! "ten two" , "twelve"
-      eng_num.sub! "ten three" , "thirteen"
-      eng_num.sub! "ten four" , "fourteen"
-      eng_num.sub! "ten five" , "fifteen"
-      eng_num.sub! "ten six" , "sixteen"
-      eng_num.sub! "ten seven" , "seventeen"
-      eng_num.sub! "ten eight" , "eighteen"
-      eng_num.sub! "ten nine" , "nineteen"
+    eng_num.sub! "ten one" , "eleven"
+    eng_num.sub! "ten two" , "twelve"
+    eng_num.sub! "ten three" , "thirteen"
+    eng_num.sub! "ten four" , "fourteen"
+    eng_num.sub! "ten five" , "fifteen"
+    eng_num.sub! "ten six" , "sixteen"
+    eng_num.sub! "ten seven" , "seventeen"
+    eng_num.sub! "ten eight" , "eighteen"
+    eng_num.sub! "ten nine" , "nineteen"
 
     puts eng_num
 
