@@ -10,7 +10,7 @@ def english(number)
 
     ones = number
 
-    eng_num = tens_place[tens] + ones_place[ones]
+    eng_num = english_tens_places[tens] + english_ones_places[ones]
 
     eng_num.sub! "ten one" , "eleven"
     eng_num.sub! "ten two" , "twelve"
