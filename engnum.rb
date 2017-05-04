@@ -5,12 +5,12 @@ def english(number)
     english_tens_places = ["", "ten ", "twenty ", "thirty ", "forty ", "fifty ", "sixty ", "seventy ", "eighty ", "ninety "]
     english_ones_places = ["", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
 
-    tens = number/10
-    number = number - tens*10
+    tens_place = number / 10
+    number = number - tens_place * 10
 
     ones = number
 
-    eng_num = english_tens_places[tens] + english_ones_places[ones]
+    eng_num = english_tens_places[tens_place] + english_ones_places[ones_place]
 
     eng_num.sub! "ten one" , "eleven"
     eng_num.sub! "ten two" , "twelve"
