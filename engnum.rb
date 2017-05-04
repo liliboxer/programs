@@ -8,7 +8,7 @@ def english(number)
     tens_place = number / 10
     number = number - tens_place * 10
 
-    ones = number
+    ones_place = number
 
     eng_num = english_tens_places[tens_place] + english_ones_places[ones_place]
 
