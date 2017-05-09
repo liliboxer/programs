@@ -14,14 +14,15 @@ def english(x)
 
 end
 
-puts "Your birthday is: "
-puts english(month).to_s + "#{date}, #{year}"
+puts "Your birthday is:#{english(month).to_s} #{date}, #{year}"
 
 birthday = Time.local(year, month, date)
 
 age_minutes = Time.now - birthday
 age_years = age_minutes / 31557600
 
+puts "Congratulations! You are:#{age_years.to_s} years old! "
 
-puts "Congratulations! You are: "
-puts age_years.to_s + "years old! "
+puts "Here's a high-five for each year"
+
+puts "\nhigh-five! " * age_years

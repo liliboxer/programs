@@ -1,10 +1,2 @@
-def sort_recursive array
-  puts "Give me words to sort! "
-  input = gets.chomp
-  if input = ""
-    break
-  else
-    
-
-  end
-end
+puts 1.to_i
+puts 01.to_i
