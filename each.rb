@@ -1,7 +1,6 @@
-characeristics = ["feared" , "respected" , "loved"]
+form = ["what is your name?","how old are you? ","what city do you live in? "]
 
-characeristics.each do |trait|
-  puts "Chester is #{trait}."
+form.each do |info|
+  input = gets.chomp 
+puts "#{info}"
 end
-
-puts "That is why you should vote Chester!"
