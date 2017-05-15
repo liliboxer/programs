@@ -9,5 +9,5 @@ File.open("bdaylist.txt") do |this|
 end
 
 puts "Give me a name and I will tell you their birthday"
-input = gets/chomp 
+input = gets.chomp 
 puts "#{birthday}"
