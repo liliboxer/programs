@@ -10,4 +10,4 @@ end
 
 puts "Give me a name and I will tell you their birthday"
 inputs = gets.chomp
-puts "#{hash["inputs"]}"
+puts "#{hash[inputs]}"
